@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:padding="30dp"
+    tools:context=".SendCodeNumber">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher_foreground"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:text="Complain Box"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        android:textColor="#FFF"
+        android:text="Enter the code number"/>
+
+
+
+
+    <EditText
+        android:id="@+id/code_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_number"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/colorTexthint"
+        android:hint="Code number"
+        android:inputType="number"
+        android:paddingLeft="0dp"
+        android:textColor="#FFF"
+        android:focusable="true"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorTexthint" />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="submit"
+        android:textColor="#FFF"
+        android:id="@+id/submitButton"
+        android:background="@color/colorLoginButton"
+        android:layout_gravity="center_horizontal"
+        android:onClick="submitCode"
+        />
+
+
+
+</LinearLayout>
